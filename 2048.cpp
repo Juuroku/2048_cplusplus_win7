@@ -8,54 +8,6 @@
 #define KEY_LEFT 75
 #define KEY_RIGHT 77
 
-bool checkArrow()
-{
-    char ipt;
-    ipt = getch();
-    switch(ipt)
-       {
-       case 0:
-           ipt = getch();
-           return false;
-           break;
-       case -32:
-           ipt = getch();
-           break;
-       case 27:
-
-       default:
-           return false;
-           break;
-       }
-       //printf("%d\n",ipt);
-       /*if(ipt == 27)
-       {
-           printf("escape(quit program)\n");
-           return true;
-       }
-       else printf("%d\n",ipt);*/
-       switch(ipt)
-       {
-       case KEY_UP:
-        printf("UP\n");
-        break;
-       case KEY_DOWN:
-        printf("DOWN\n");
-        break;
-       case KEY_LEFT:
-        printf("LEFT\n");
-        break;
-       case KEY_RIGHT:
-        printf("RIGHT\n");
-        break;
-       default:
-           return false;
-        printf("NOT ARROW\n");
-        break;
-       }
-       return true;
-}
-
 int plate2print(int x)
 {
     int base;
